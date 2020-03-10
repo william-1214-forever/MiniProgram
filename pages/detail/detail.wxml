@@ -1,0 +1,18 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class='detail'
+             scroll-y>
+             <!-- 1.展示轮播图 -->
+             <w-swiper list="{{topImages}}"/>
+             <!-- 2.商品基本信息 -->
+             <w-base-info baseInfo="{{baseInfo}}"/>
+             <!-- 3.商品店铺信息展示 -->
+             <w-shop-info shopInfo="{{shopInfo}}"/>
+             <!-- 4.商品细节展示 -->
+              <w-detail-info detailInfo="{{detailInfo}}"/>
+              <!-- 5.商品参数 -->
+              <w-param-info paramInfo="{{paramInfo}}"/>
+              <!-- 6.用户评价 -->
+              <w-comment-info commentInfo="{{commentInfo}}"/>
+              <!-- 7推荐 -->
+              <w-recommend-info recommends="{{recommends}}"/>
+</scroll-view>
