@@ -87,9 +87,6 @@ Page({
   },
   //onShow： 页面显示出来时回调的函数
   //页面显示是否意味着所有的图片都加载完成  不是
-  onShow() {
-
-  },
   //------------------------------------------- 事件监听函数 ------------------------------------------------
   //图片加载完成
   handleImageLoad(event) {
@@ -137,7 +134,7 @@ Page({
     //获取滚动条高度
     const scrollTop = options.scrollTop;
     const flag1 = scrollTop >= this.data.tabScrollTop;
-    console.log(scrollTop,'---------', this.data.tabScrollTop)
+    // console.log(scrollTop,'---------', this.data.tabScrollTop)
     if(flag1 != this.data.isTabFixed){
       this.setData({
         isTabFixed: flag1

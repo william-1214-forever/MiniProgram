@@ -10,6 +10,8 @@ import {
 //创建App的实例，来调用方法或变量
 const app = getApp()
 
+const top = 1000;
+
 Page({
   data: {
     iid:'',
@@ -19,7 +21,9 @@ Page({
     detailInfo: {},
     paramInfo: {},
     commentInfo: {},
-    recommends: {}
+    recommends: {},
+    showBackTop: false,
+    onLoads: false
   },
   onLoad: function (options) {
     //获取传过来的iid
@@ -37,7 +41,8 @@ Page({
   _getDetailData() {
     getDetail(this.data.iid).then(res => {
       const data = res.data.result;
-      console.log(data);
+      // console.log(data);
+
 
       //1.取出顶部图片
       const topImages = data.itemInfo.topImages;
@@ -68,7 +73,7 @@ Page({
         paramInfo,
         commentInfo
       })
-      
+      this.data.onLoad = true;
     }).catch(err => {
       console.log(err);
     })
@@ -81,6 +86,16 @@ Page({
       console.log(res);
     })
   },
+  onPageScroll(options) {
+    //获取滚动条高度
+    const scrollTop = options.scrollTop;
+    const flg = scrollTop >= top;
+    if(flg != this.data.showBackTop){
+      this.setData({
+        showBackTop: scrollTop >= top
+      })
+    }
+  }
 })
 
 

@@ -1,0 +1,17 @@
+<!--pages/detail/childCpns/w-bottom-bar/w-bottom-bar.wxml-->
+<view class="wrap">
+  <view class="icon">
+    <image src="/assets/detail/service.png" mode="widthFix" class="image"/>
+    <view>客服</view>
+  </view>
+  <view class="icon">
+    <image src="/assets/detail/shop.png" class="image"/>
+    <view>店铺</view>
+  </view>
+  <view class="icon">
+    <image src="/assets/detail/collect.png" class="image"/>
+    <view>收藏</view>
+  </view>
+  <view class="shopcar">加入购物车</view>
+  <view class="shoping">购买</view>
+</view>

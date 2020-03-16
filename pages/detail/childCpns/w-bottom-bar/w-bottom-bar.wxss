@@ -1,0 +1,37 @@
+/* pages/detail/childCpns/w-bottom-bar/w-bottom-bar.wxss */
+.wrap {
+  display: flex;
+  /* z-index: 1; */
+  background-color: #fff;
+  /* justify-content:space-evenly; */
+}
+.image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.icon{
+  /* border: 2rpx solid #f00; */
+  padding: 15rpx 40rpx; 
+  text-align: center;
+}
+
+.shopcar,
+.shoping{
+  font-size: 24rpx;
+  text-align: center;
+  /* border: 2rpx solid #f00; */
+  width: 198rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+.shoping {
+  background-color: #FF5777;
+   color: #fff;
+}
+.shopcar {
+  background-color: #FFE817;
+ 
+}
+.icon view {
+  font-size: 20rpx;
+}

@@ -15,4 +15,8 @@
               <w-comment-info commentInfo="{{commentInfo}}"/>
               <!-- 7推荐 -->
               <w-recommend-info recommends="{{recommends}}"/>
+              <!-- 8.底部导航栏 -->
+              <w-bottom-bar class="buttom-bar"/>
+              <!-- 9.backTop -->
+              <w-back-top class="back-top" wx:if="{{showBackTop}}"/>
 </scroll-view>
